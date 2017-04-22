@@ -1,0 +1,98 @@
+	#custom-search-input{
+    padding: 2px;
+    width: 102%;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    margin-bottom: 10px; 
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+.btn{
+width: 100%;
+padding: 10px 10px;
+text-align: left;
+}
+
+#pic {
+	width: 90%;
+	margin: 10px 0px;
+	height: 50vh;
+    border: 2px solid #ccc;
+	border-radius: 10px;
+    margin-right: 90px;  
+	margin-bottom: 20px; 
+	}
+	#type {
+		margin-left: 10px;
+	}
+
+.col-md-1 , .col-md-2 ,.col-md-3 ,.col-md-4 ,
+.col-md-5 ,.col-md-6 ,.col-md-7 ,
+.col-md-9 ,.col-md-10 ,.col-md-12 ,.col-md-12 {
+	padding: 0;
+	margin: 0;
+}
+
+
+.giatien {
+	color: red;
+	font-weight: bold;
+}
+.thoigian {
+	color: gray;
+}
+
+.item{
+text-align: center;
+margin: 10px;
+width: 230px;
+border: 1px solid #d6d6d6;
+border-radius: 5px; 
+}
+
+.container{
+        padding-top: 10px ;
+        padding-left: 95px;
+}
+
+
+
+.dropdown {
+    padding: 0;
+    width: 250px;
+    margin-right: 50px; 
+}
+
+.col-md-1 {
+    width: 36px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+
+
