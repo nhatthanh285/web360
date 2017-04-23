@@ -20,6 +20,7 @@ class CreateTypeOfRealestateTable extends Migration
                 ->references('id')
                 ->on('group_post')
                 ->onDelete('cascade');
+            $table->string('name');
             $table->timestamps();
         });
     }
