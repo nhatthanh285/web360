@@ -28,13 +28,50 @@ class CitiesController extends AppBaseController
 //        $this->middleware('admin.check');
     }
 
+    /**
+     * Display a listing of the Cities.
+     *
+     * @param Request $request
+     * @return Response
+     */
     public function index(Request $request)
     {
         $this->citiesRepository->pushCriteria(new RequestCriteria($request));
         $this->citiesRepository->applySearch();
-        $cities = Cities::orderBy('id', 'DESC')->paginate(10);
+        $cities = Cities::orderBy('name', 'ASC')->paginate(10);
+        $s1=$cities[0];
 //        return view('backend.news.index')
 //            ->with('news', $cities);
-        return $cities;
+        return $s1->name;
     }
+
+    /**
+     * Show the form for creating a new City.
+     *
+     * @return Response
+     */
+    public function create()
+    {
+        //insert view create city here
+        return view('');
+    }
+
+    /**
+     * Store a newly created City in storage.
+     *
+     * @param CreateBonusRequest $request
+     *
+     * @return Response
+     */
+    public function store(CreateCitiesRequest $request)
+    {
+        $input = $request->all();
+
+        $city = $this->citiesRepository->create($input);
+
+        Flash::success('Thêm thành phố mới thành công.');
+
+        return redirect(route('admin.city.index'));
+    }
+
 }
