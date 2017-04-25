@@ -3,8 +3,8 @@
 <head>
    <meta charset="utf-8">
 	<title></title>
-   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-   <link href="{{asset('css/Alldanhsach.css')}}" rel="stylesheet" />
+   <link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+   <link href="{{asset('public/css/Alldanhsach.css')}}" rel="stylesheet" />
 </head>
 <body>
 
@@ -88,7 +88,7 @@
 
   </div>
 	<div class="row">
-	<div class="col-md-12" style="margin: 0 "><img id="pic" src="image/index.jpg" alt=""></div>
+	<div class="col-md-12" style="margin: 0 "><img id="pic" src="public/images/index.jpg" alt=""></div>
 	</div>
 </div>
 

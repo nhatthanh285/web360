@@ -4,9 +4,9 @@
 	<title></title>
 	<meta charset="utf-8">
 	<title></title>
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/footer.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
 	<style type="text/css" media="screen">
 	 .dangky {
 	 	text-align: center;

@@ -16,7 +16,7 @@
                 <label>
                    <input type="checkbox"> Ghi nhớ mật khẩu
                 </label>
-              </div
+              </div>
 			
 			<hr class="colorgraph">
 			<div class="row">

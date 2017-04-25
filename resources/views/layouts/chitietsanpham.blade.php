@@ -3,8 +3,8 @@
 <head>
    <meta charset="utf-8">
 	<title></title>
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/chitietsanpham.css')}}" rel="stylesheet" />
+	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/chitietsanpham.css')}}" rel="stylesheet" />
 
 </head>
 <body>
