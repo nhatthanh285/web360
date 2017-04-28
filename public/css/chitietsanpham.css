@@ -3,6 +3,14 @@
   width: 75vw;
   padding: 0;
 }
+
+.container >div >iframe {
+    width: 100%;
+    height:450px;
+    margin-top: 100px;
+}
+
+
 #custom_carousel .item  .top {
     overflow:hidden;
     height:350px;
@@ -197,5 +205,4 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
   position: relative;
   border-radius: 3px;
   border: 1px solid #ccc;
-}
 }
