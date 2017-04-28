@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypeOfRealestateTable extends Migration
+class CreateUpdatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateTypeOfRealestateTable extends Migration
      */
     public function up()
     {
-        Schema::create('type_of_realestate', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('posts', function (Blueprint $table) {
+            $table->integer('district')->nullable()->change();
+            $table->integer('city')->nullable()->change();
         });
     }
 
@@ -27,6 +26,8 @@ class CreateTypeOfRealestateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_of_realestate');
+        Schema::table('posts', function (Blueprint $table) {
+            //
+        });
     }
 }

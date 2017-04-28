@@ -28,10 +28,15 @@ class CreatePostsTable extends Migration
                 ->on('realestate_status')
                 ->onDelete('cascade');
             $table->double('area'); // m2
-            $table->integer('realestate_address')->unsigned();
-            $table->foreign('realestate_address')
+            $table->integer('district')->unsigned();
+            $table->foreign('district')
                 ->references('id')
                 ->on('districts')
+                ->onDelete('cascade');
+            $table->integer('city')->unsigned();
+            $table->foreign('city')
+                ->references('id')
+                ->on('cities')
                 ->onDelete('cascade');
             $table->json('images')->nullable(false)->change();
             $table->integer('type_of_realestate')->unsigned();
@@ -43,6 +48,11 @@ class CreatePostsTable extends Migration
             $table->foreign('type_of_customer')
                 ->references('id')
                 ->on('type_of_customer')
+                ->onDelete('cascade');
+            $table->integer('group_post')->unsigned();
+            $table->foreign('group_post')
+                ->references('id')
+                ->on('group_post')
                 ->onDelete('cascade');
             $table->double('price');
             $table->timestamps();

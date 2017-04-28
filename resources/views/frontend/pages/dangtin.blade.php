@@ -3,9 +3,9 @@
 <head>
 	 <meta charset="utf-8">
 	  <title></title>
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/footer.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
 	 <style type="text/css" media="screen">
 	 	#congratulation-text {
           width: 100%;
@@ -31,11 +31,11 @@
 });
 </script>
 <div class="container">
-  @include('layouts.navbar_danhsach_sp')
+  @include('frontend.layouts.navbar_danhsach_sp')
 	<div class="content-dangtin">
-        @include('layouts.content-dangtin')
+        @include('frontend.layouts.content-dangtin')
     </div>
 </div>
-@include('layouts.footer')
+@include('frontend.layouts.footer')
 </body>
 </html>

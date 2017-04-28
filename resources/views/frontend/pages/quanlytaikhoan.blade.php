@@ -4,10 +4,10 @@
 	<title></title>
 	<meta charset="utf-8">
 	<title></title>
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/footer.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/quanlytaikhoan.css')}}" rel="stylesheet" />
+	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/quanlytaikhoan.css')}}" rel="stylesheet" />
     <style type="text/css" media="screen">
       .container{
         padding-left: 30px;
@@ -24,11 +24,11 @@
   <script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript" charset="utf-8"></script>
 <script src="{{asset('js/quanlytaikhoan.js')}}" type="text/javascript" charset="utf-8"></script>
 <div class="content container">
-@include('layouts.navbar_danhsach_sp')
+@include('frontend.layouts.navbar_danhsach_sp')
   <div class="quanlytaikhoan">
-    @include('layouts.quanlytaikhoan')
+    @include('frontend.layouts.quanlytaikhoan')
   </div>     
 </div>
-@include('layouts.footer')
+@include('frontend.layouts.footer')
 </body>
 </html>

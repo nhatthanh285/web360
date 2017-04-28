@@ -4,9 +4,9 @@
 	<title></title>
 	<meta charset="utf-8">
 	<title></title>
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/footer.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
     <style type="text/css" media="screen">
     	.dangnhap{
     		font-weight: bold;
@@ -23,12 +23,12 @@
 </head>
 <body>
 <div class="container">
-       @include('layouts.navbar_danhsach_sp')
+       @include('frontend.layouts.navbar_danhsach_sp')
 <div class="content-dangnhap">
-  @include('layouts.content-dangnhap')
+  @include('frontend.layouts.content-dangnhap')
  </div>
 
 </div>
- @include('layouts.footer')
+ @include('frontend.layouts.footer')
 </body>
 </html>
