@@ -1,7 +1,7 @@
 
 <div class="container" >
-    <div class="iframe-slide">
-    <iframe src="http://batdongsan360.ga/">
+    {{--<div class="container div iframe">--}}
+    <iframe width="100%" height="400px" src="http://localhost/Output/Output//">
     </iframe>
-    </div>
+    {{--</div>--}}
 </div>

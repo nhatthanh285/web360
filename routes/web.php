@@ -11,27 +11,45 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend/pages/Trangchu');
-});
+//Route::get('/', function () {
+//    return view('frontend/pages/trangchu');
+//});
 
-Route::get('/dangnhap', function () {
-    return view('frontend/pages/dangnhap');
-});
+//Route::controllers([
+//    'auth' => 'Auth\AuthController',
+//    'password' => 'Auth\PasswordController'
+//]);
 
-Route::get('/dangky', function () {
-    return view('frontend/pages/dangky');
-});
 
-Route::get('/all_grid', function () {
+
+
+Route::get('/', 'HomeController@index');
+
+Route::get('/signin', ['as'=> 'signin', 'uses' =>'HomeController@signin']);
+
+Route::post('/signin', ['as'=> 'signin', 'uses' =>'HomeController@postSigninByPhone']);
+
+Route::get('/signout', ['as' => 'logout', 'uses' => 'HomeController@signout']);
+
+//Route::get('/signin', ['as'=> 'signin', 'uses' =>'HomeController@signin']);
+
+Route::get('/register', ['as'=> 'register', 'uses' =>'HomeController@register']);
+
+Route::get('/newpost', ['as'=> 'newpost', 'uses' =>'HomeController@newPost']);
+
+//Route::get('/dangky', function () {
+//    return view('frontend/pages/dangky');
+//});
+
+Route::get('/allgrid', function () {
     return view('frontend/pages/danhsach_sanpham_grid');
 });
 
-Route::get('/all_list', function () {
+Route::get('/alllist', function () {
     return view('frontend/pages/danhsach_sanpham_list');
 });
 
-Route::get('/chitiet', function () {
+Route::get('/detail', function () {
     return view('frontend/pages/chitiet_sanpham');
 });
 
@@ -48,3 +66,7 @@ Route::get('/test', 'Admin\CitiesController@index');
 Route::get('/allpost', ['as'=> 'allpost', 'uses' =>'User\PostsController@index']);
 
 Route::get('/onepost/{post}', ['as'=> 'onepost.show', 'uses' => 'User\PostsController@show']);
+
+Route::get('/onepost/4', ['as' => 'onepost', 'uses' => 'PostsController@show']);
+
+

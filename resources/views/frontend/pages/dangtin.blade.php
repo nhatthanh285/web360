@@ -30,6 +30,9 @@
     $("#text-count").text($(this).val().length + " symbols");
 });
 </script>
+
+
+
 <div class="container">
   @include('frontend.layouts.navbar_danhsach_sp')
 	<div class="content-dangtin">

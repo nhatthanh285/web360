@@ -7,6 +7,7 @@
     <link href="{{asset('public/css/Alldanhsach.css')}}" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -91,7 +92,7 @@
 
     </div>
     <div class="row">
-        <div class="col-md-12" style="margin: 0 "><img id="pic" src="public/images/index.jpg" alt=""></div>
+        <div class="col-md-12" style="margin: 0 "><img id="pic" src="public/images/anhmau.png" alt=""></div>
     </div>
 </div>
 

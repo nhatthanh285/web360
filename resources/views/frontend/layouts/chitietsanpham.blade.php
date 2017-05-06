@@ -10,9 +10,12 @@
 <body>
 <div class="container warraper">
     <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <!-- Goi 1 trong 2 thang 2 day -->
-        @include('layouts.image_360')
-        @include('layouts.slide_chitiet')
+        @if(!is_null($post->img360))
+            @include('frontend.layouts.image_360')
+         @else
+            @include('frontend.layouts.slide_chitiet')
+         @endif
+
     </div>
     <div class="title">
         <h3><b>{!! $post->title !!}</b></h3>

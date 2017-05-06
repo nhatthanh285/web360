@@ -9,9 +9,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-active"><img src="public/images/user.png" class="nav-img-use" /></li>
-                    <li><a href=""  style="margin: 0 ;padding-top: 10px; ">Đăng Nhập</a></li>
-                    <li><a href="" class="nav-dangky" style="margin: 0 ; padding-top: 10px;padding-left: 0;">Đăng Ký</a></li>
-                    <li><a href="" class="nav-button"><button  type="button" class="btn btn-warning">Đăng tin</button></a></li>
+                    {{--<li><a href=""  style="margin: 0 ;padding-top: 10px; ">Đăng Nhập</a></li>--}}
+                    {{--<li><a href="" class="nav-dangky" style="margin: 0 ; padding-top: 10px;padding-left: 0;">Đăng Ký</a></li>--}}
+                    {{--<li><a href="" class="nav-button"><button  type="button" class="btn btn-warning">Đăng tin</button></a></li>--}}
                 </ul>
             </div>
         </div>

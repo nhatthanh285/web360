@@ -8,6 +8,7 @@
     <link href="{{asset('public/css/header.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/danhsach_list_chuan.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/danhsach_gird_chuan.css')}}" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
