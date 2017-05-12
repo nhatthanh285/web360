@@ -20,7 +20,7 @@
   <script src="{{asset('public/js/bootstrap.min.js')}}" type="text/javascript" charset="utf-8"></script>
 <script src="{{asset('public/js/chitietsanpham.js')}}" type="text/javascript" charset="utf-8"></script>
 <div >
-	@include('frontend.layouts.navbar')
+	@include('frontend.layouts.navbar_2')
 </div>
 <div class="content">
 	@include('frontend.layouts.chitietsanpham')

@@ -12,14 +12,52 @@
 </head>
 <body>
 
-<div>@include('frontend.layouts.navbar_danhsach_sp')</div>
+<div>@include('frontend.layouts.navbar_2')</div>
 <div>@include('frontend.layouts.header')</div>
 <div class="container">
-    <div>   @if (1 > 0 )
-                @include('frontend.layouts.AllDanhsach_list_chuan')
-            @else
-                @include('frontend.layouts.AllDanhsach_grid_chuan')
-             @endif
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div>Danh sách bất động sản</div>
+            <div>
+                <div class="pull-right" style="margin-top:-28px">
+                    <button type="button" class="btn btn-default grid" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="pull-right" style="margin-top:-28px">
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.divgrid').hide();
+                        $('.list').click(function () {
+                            $('.divgrid').fadeOut(0);
+                            $('.divlist').fadeIn(200);
+                        });
+                    });
+                </script>
+                <script>
+                    $(document).ready(function () {
+                        $('.grid').click(function () {
+                            $('.divlist').fadeOut(0);
+                            $('.divgrid').fadeIn(200);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div>
+                <div class="divlist">
+                    @include('frontend.layouts.AllDanhsach_list_chuan')
+                </div>
+                <div class="divgrid">
+                    @include('frontend.layouts.AllDanhsach_grid_chuan')
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @include('frontend.layouts.footer')

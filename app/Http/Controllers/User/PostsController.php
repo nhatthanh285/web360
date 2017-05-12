@@ -21,6 +21,7 @@ use Illuminate\Http\Request;
 use Flash as FL;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response as RP;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends AppBaseController
 {
@@ -44,7 +45,8 @@ class PostsController extends AppBaseController
         $this->postsRepository->applySearch();
         $posts = Posts::orderBy('title', 'ASC')->paginate(10);
         $cities = Cities::all();
-        return view('frontend.pages.danhsach_sanpham_list', compact('posts','cities'));//            ->with('news', $cities);
+        $login = Auth::check();
+        return view('frontend.pages.danhsach_sanpham_list', compact('posts','cities','login'));//            ->with('news', $cities);
 
     }
 

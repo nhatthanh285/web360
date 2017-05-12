@@ -35,6 +35,10 @@ Route::get('/signout', ['as' => 'logout', 'uses' => 'HomeController@signout']);
 
 Route::get('/register', ['as'=> 'register', 'uses' =>'HomeController@register']);
 
+Route::post('/register', ['as'=> 'register', 'uses' =>'HomeController@postRegister']);
+
+Route::post('/phoneValidate', ['as'=> 'phoneValidate', 'uses' =>'HomeController@phoneValidate']);
+
 Route::get('/newpost', ['as'=> 'newpost', 'uses' =>'HomeController@newPost']);
 
 //Route::get('/dangky', function () {

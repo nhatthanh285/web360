@@ -12,13 +12,18 @@ namespace App\Http\Controllers;
 use App\Models\Cities;
 use App\Models\Online;
 use App\Models\TypeOfCustomer;
+use App\Models\Users;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use DB;
+use Laracasts\Flash\Flash;
+use Illuminate\Support\Facades\Cache;
 
 class HomeController extends Controller
 {
+//    public $smsOTP;
 
     function __construct()
     {
@@ -69,7 +74,7 @@ class HomeController extends Controller
 
 //            $phone = \DB::table('sessions')->insert(['phone' => $request->phone]);
 
-            return redirect()->intended('/')->withInput([$request->phone,$request->password]);
+            return redirect()->intended('/')->withInput([$request->phone, $request->password]);
         } else {
             return redirect('signin')->with('message', 'Tài khoản hoặc mật khẩu không chính xác');
         }
@@ -78,9 +83,60 @@ class HomeController extends Controller
 
     public function register()
     {
-        $online = Online::guest()->count();
-        dd($online);
         return view('frontend.pages.dangky');
+    }
+
+    public function phoneValidate(Request $request)
+    {
+        $user_otp = $request->otp;
+
+        if ($user_otp == Cache::get('otp')) {
+            User::create([
+                'name' => Cache::get('name'),
+                'phone' => Cache::get('phone'),
+                'password' => bcrypt(Cache::get('password')),
+            ]);
+        }
+    }
+
+    public function postRegister(Request $request)
+    {
+        $name = $request->name;
+        $phone = $request->phone;
+        $password = $request->password;
+        //create temp user
+        $user = User::where('phone', '=', $phone)->first();
+        if ($user === null) {
+
+            $otp = random_int(123456, 987654);
+
+            Cache::put("otp", $otp, 2);
+            Cache::put("name", $name, 2);
+            Cache::put("phone", $phone, 2);
+            Cache::put("password", $password, 2);
+            $this->sendOTP($phone, $otp);
+            return view('frontend.pages.xacnhanOTP', compact('otp'));
+        } else {
+            Flash::error('Số điện thoại đã tồn tại ');
+            return redirect(route('register'));
+        }
+    }
+
+    private function sendOTP($phone, $otp)
+    {
+        $APIKey = "6872921844DB48FE9E19498B25434D";
+        $SecretKey = "9F75445B3B3CF30D167BE3A502BE3B";
+        $YourPhone = $phone;
+        $OTP = $otp;
+        $Content = "Mã OTP xác nhận đăng ký tài khoản AlphaZ của bạn là " . $OTP;
+        $SendContent = urlencode($Content);
+        $data = "http://rest.esms.vn/MainService.svc/json/SendMultipleMessage_V4_get?Phone=$YourPhone&ApiKey=$APIKey&SecretKey=$SecretKey&Content=$SendContent&SmsType=4";
+        $curl = curl_init($data);
+        curl_setopt($curl, CURLOPT_FAILONERROR, true);
+        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($curl);
+        return $OTP;
     }
 
     public function signout()

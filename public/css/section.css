@@ -1,19 +1,18 @@
-   #backgr
-    {
-    	width: 100%;
-    	height: 100vh;
-    }
-
-    body 
+   body 
     {
     	margin: 0;
     	padding: 0;
+		background:#F4F4F4!important;
     }
 
     .noidung {
     	padding: 10px 80px;
     }
-
+@media(max-width:767px){
+	.noidung{
+		margin-top:-110px!important;
+	}
+}
     .section{
     	height: 250px;
     	padding: 10px;
@@ -43,12 +42,15 @@
     	font-weight: bolder;
     }
 
-    .section:hover {
+    /* .section:hover {
+	margin-bottom: 25px;
      margin-top: -5px;
      border: 1px solid rgb(200, 200, 200);
      box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
      background: rgba(200, 200, 200, 0.1);
      transition: 0.5s;
-    }
-
+    } */
+	.section:hover {
+    box-shadow: 0 0 15px 2px #000;
+}
     

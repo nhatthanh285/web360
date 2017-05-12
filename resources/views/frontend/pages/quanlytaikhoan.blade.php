@@ -24,7 +24,7 @@
   <script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript" charset="utf-8"></script>
 <script src="{{asset('js/quanlytaikhoan.js')}}" type="text/javascript" charset="utf-8"></script>
 <div class="content container">
-@include('frontend.layouts.navbar_danhsach_sp')
+@include('frontend.layouts.navbar_2')
   <div class="quanlytaikhoan">
     @include('frontend.layouts.quanlytaikhoan')
   </div>     

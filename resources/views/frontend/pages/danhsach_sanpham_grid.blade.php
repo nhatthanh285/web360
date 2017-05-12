@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div>@include('frontend.layouts.navbar_danhsach_sp')</div>
+<div>@include('frontend.layouts.navbar_2')</div>
 <div>@include('frontend.layouts.header')</div>
 <div class="container">
     <div>@include('frontend.layouts.AllDanhsach_grid_chuan')</div>

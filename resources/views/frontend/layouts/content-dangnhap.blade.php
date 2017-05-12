@@ -23,7 +23,7 @@
 
             <hr class="colorgraph">
             <div class="row">
-                <div class="col-xs-12 col-md-12"><input type="submit" value="Đăng nhập" class="btn  btn-block btn-lg"
+                <div class="col-xs-12 col-md-12"><input type="submit" value="Đăng nhập" class="btn btn-primary btn-block btn-lg"
                                                         tabindex="7"></div>
             </div>
             <br>
@@ -31,7 +31,7 @@
                 <form role="form" action="" method="get">
                 {{--<div class="col-xs-12 col-md-12"><a href="#" class="btn  btn-block btn-lg">Quên mật khẩu</a></div>--}}
 
-                    <div class="col-xs-12 col-md-12"><input type="submit" value="Quên mật khẩu" class="btn  btn-block btn-lg"
+                    <div class="col-xs-12 col-md-12"><input type="submit" value="Quên mật khẩu" class="btn btn-primary btn-block btn-lg"
                                                             tabindex="8"></div>
 
                 </form>
@@ -40,10 +40,10 @@
             <div class="row">
                 {{--<div class="col-xs-12 col-md-6"><input type="submit" value="Đăng nhập bằng Facebook" class="btn btn-primary btn-block btn-lg" tabindex="8"></div>--}}
                 {{--<div class="col-xs-12 col-md-6"><input type="submit" value="Đăng nhập bằng Google" class="btn btn-success btn-lg btn-block btn-danger" tabindex="9"></div>--}}
-                <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary btn-block btn-lg">Đăng nhập bằng
-                        Facebook</a></div>
-                <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-lg btn-block btn-danger">Đăng
-                        nhập bằng Google</a></div>
+                {{--<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-primary btn-block btn-lg">Đăng nhập bằng--}}
+                        {{--Facebook</a></div>--}}
+                {{--<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-lg btn-block btn-danger">Đăng--}}
+                        {{--nhập bằng Google</a></div>--}}
             </div>
         </form>
     </div>
