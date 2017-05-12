@@ -9,6 +9,7 @@
 
 	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
 	<script>
     var Dropzone = require("enyo-dropzone");

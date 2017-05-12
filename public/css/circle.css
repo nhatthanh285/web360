@@ -1,5 +1,6 @@
 body{
    position: relative;
+   background:#f4f4f4!important;
 }
 @media(max-width:768px){
 	.bt1-index{
