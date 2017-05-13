@@ -43,6 +43,7 @@ button{
   height: 0vh;    
 }
 .link-menu{
+	font-weight:bold;
 	color:#000!important;
 }
 .link-menu:hover{

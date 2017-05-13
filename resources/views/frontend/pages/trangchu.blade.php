@@ -45,7 +45,7 @@
 	</div>
 </div>
 
-@include('frontend.layouts.navbar')
+@include('frontend.layouts.navbar_3')
 
 <div class="container noidung">
     @include('frontend.layouts.noidung_trangchu')
