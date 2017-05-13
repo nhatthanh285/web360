@@ -6,11 +6,14 @@
 	
 	<link href="{{asset('public/css/dropzone.css')}}" rel="stylesheet" />
 	<script src="{{asset('public/js/dropzone.js')}}"></script>
-
+	<link href="{{asset('public/css/navbar.css')}}" rel="stylesheet"/>
+	<link href="{{asset('public/css/circle.css')}}" rel="stylesheet"/>
 	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
-    <link href="{{asset('public/css/navbar.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+	
+	<script src="{{asset('public/js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{asset('public/js/bootstrap.min.js')}}"></script>
 	<script>
     var Dropzone = require("enyo-dropzone");
     Dropzone.autoDiscover = false;
@@ -27,10 +30,6 @@
         }
         .content-dangtin {
             margin: 80px;
-        }
-        .container {
-            padding-top: 10px;
-            padding-left: 30px;
         }
 		 html, body {
         height: 100%;

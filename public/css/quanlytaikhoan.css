@@ -1,4 +1,10 @@
 /* USER PROFILE PAGE */
+body{
+	background:#f4f4f4!important;
+}
+.well{
+	background:#fff!important;
+}
  .card {
     margin-top: 20px;
     padding: 30px;

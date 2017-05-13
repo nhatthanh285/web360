@@ -4,7 +4,7 @@
     <title></title>
     <link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/footer.css')}}" rel="stylesheet"/>
-    <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet"/>
+    <link href="{{asset('public/css/navbar.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/header.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/danhsach_list_chuan.css')}}" rel="stylesheet"/>
     <link href="{{asset('public/css/danhsach_gird_chuan.css')}}" rel="stylesheet"/>
@@ -14,7 +14,7 @@
 
 <div>@include('frontend.layouts.navbar_2')</div>
 <div>@include('frontend.layouts.header')</div>
-<div class="container">
+<div class="container list-post">
     <div class="panel panel-primary">
         <div class="panel-heading">
             <div>Danh sách bất động sản</div>

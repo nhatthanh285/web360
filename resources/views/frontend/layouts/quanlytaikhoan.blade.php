@@ -28,7 +28,7 @@ $(".btn-pref .btn").click(function () {
             <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
         <div class="useravatar">
-            <img alt="" src="image/dung.png">
+            <img class="img-circle" src="{!! asset('public/images/pic6.jpg') !!}"/>
         </div>
         <div class="card-info"> <span class="card-title">Trần Mạnh Dũng</span>
 

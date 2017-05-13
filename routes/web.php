@@ -65,6 +65,10 @@ Route::get('/taikhoan', function () {
     return view('frontend/pages/quanlytaikhoan');
 });
 
+Route::get('/profile', function () {
+    return view('frontend/pages/profile');
+});
+
 Route::get('/test', 'Admin\CitiesController@index');
 
 Route::get('/allpost', ['as'=> 'allpost', 'uses' =>'User\PostsController@index']);

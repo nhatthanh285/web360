@@ -14,11 +14,11 @@
           <ul class="nav navbar-nav navbar-right">
             @if($login == true)
                     <li><img src="{!! asset("public/images/user.png") !!}" class="img-use"/></li>
-                    <li><a href="{!! route('logout') !!}" class="item dangky link-menu">{!! Auth::user()->name !!}</a></li>
-                    <li><a href="{!! route('logout') !!}" class="item dangky link-menu">Đăng xuất</a></li>
+                    <li><a href="{!! route('logout') !!}" class="link-menu">{!! Auth::user()->name !!}</a></li>
+                    <li><a href="{!! route('logout') !!}" class="link-menu">Đăng xuất</a></li>
                 @else
-                    <li><a href="{!! route('signin') !!}" class="item link-menu">Đăng Nhập</a></li>
-                    <li><a href="{!! route('register') !!}" class="item dangky link-menu">Đăng Ký</a></li>
+                    <li><a href="{!! route('signin') !!}" class="link-menu">Đăng Nhập</a></li>
+                    <li><a href="{!! route('register') !!}" class="dangky link-menu">Đăng Ký</a></li>
                 @endif
 
                 <li><a href="{!! route('newpost') !!}" class="btn-newpost"> Đăng tin</a></li>

@@ -17,12 +17,6 @@
 
         .content-dangky {
             margin-top: 60px;
-            height: 100vh;
-        }
-
-        .container {
-            padding-top: 10px;
-            padding-left: 30px;
         }
     </style>
 </head>

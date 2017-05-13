@@ -10,21 +10,18 @@
 <body>
 <div class="container">
     <div class="row img-pr thaydoi">
-
         @include('frontend.layouts.slide_chitiet')
-
-
     </div>
     <div class="row btn-pr">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 show-btn-viewpost">
             <button type="button" class="btn btn-slide" id="sl">Slide ảnh</button>
             <button type="button" class="btn btn-360" id="anh360">Ảnh 360</button>
         </div>
 
     </div>
     <div class="row content-pr">
-        <div class="col-xs-12 col-sm-8 col-md-8">
-            <h3><b>{!! $post->title !!}</b></h3>
+        <div class="col-xs-12 col-sm-8 col-md-8 content-onepost">
+            <h3 class="post-title-onepost"><b>{!! $post->title !!}</b></h3>
             <p>Địa điểm : <span class="diadiem">{!! $address->name !!} </span></p>
             <p>Giá : <span class="diadiem">{!! number_format($post->price) !!} VNĐ </span></p>
             <p><b style="color: red; font-size: 16px;">Thông tin chi tiết</b></p>

@@ -1,10 +1,7 @@
-
-   #custom-search-input{
+#custom-search-input{
     padding: 2px;
-    width: 102%;
     border: solid 1px #E4E4E4;
     border-radius: 6px;
-    margin-bottom: 10px; 
     background-color: #fff;
 }
 
@@ -183,7 +180,7 @@ a, a:visited, a:active{
 }
 .btn-popup{
 	background: #EC971F;
-    padding: 7px;
+    padding: 7px 0;
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -191,5 +188,9 @@ a, a:visited, a:active{
 }
 .btn-popup a{
 	color:#fff;
+	padding: 10px 20px;
 	text-decoration:none!important;
+}
+.btn-popup1{
+	margin-top:15px!important;
 }

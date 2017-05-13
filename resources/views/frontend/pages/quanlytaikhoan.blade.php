@@ -7,12 +7,9 @@
 	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/quanlytaikhoan.css')}}" rel="stylesheet" />
     <style type="text/css" media="screen">
-      .container{
-        padding-left: 30px;
-        padding-top: 10px;
-      }
       .quanlytaikhoan {
         margin: 50px auto;
         margin-bottom: 80px; 

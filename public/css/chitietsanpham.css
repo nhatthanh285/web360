@@ -1,4 +1,6 @@
-
+body{
+	background:#f4f4f4!important;
+}
 .container{
   width: 75vw;
   padding: 0;
@@ -203,4 +205,15 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 }
 .profile-pro{
 	margin-top:20px;
+	padding:0;
+}
+.content-onepost{
+	background:#fff;
+	margin-top:20px;
+}
+.post-title-onepost{
+	padding-top:0!important;
+}
+.show-btn-viewpost{
+	padding: 0 5px;
 }

@@ -17,8 +17,8 @@
                 @if(!empty($login) && $login == true)
                     <li class="nav-active"><img src="public/images/user.png" class="nav-img-use"/></li>
                 @else
-                <li><a href="">Đăng Nhập</a></li>
-                <li><a href="">Đăng Ký</a>
+                <li><a href="" class="link-menu">Đăng Nhập</a></li>
+                <li><a href="" class="link-menu">Đăng Ký</a>
                 </li>
 
                 @endif

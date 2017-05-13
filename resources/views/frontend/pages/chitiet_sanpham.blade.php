@@ -5,6 +5,7 @@
 	<link href="{{asset('public/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/footer.css')}}" rel="stylesheet" />
     <link href="{{asset('public/css/navbar_danhsach_sp.css')}}" rel="stylesheet" />
+    <link href="{{asset('public/css/navbar.css')}}" rel="stylesheet" />
     <style type="text/css" media="screen">
     	.logofooter {
     		margin-bottom: 130px; 
@@ -26,7 +27,7 @@
 	@include('frontend.layouts.chitietsanpham')
 </div>
 <div class="foo">
-	@include('frontend.layouts.footer')
+	@include('frontend.layouts.footer1')
 </div>
 
      
