@@ -4,10 +4,12 @@
     	padding: 0;
 		background:#F4F4F4!important;
     }
-
-    .noidung {
+@media(min-width:900px){
+	.noidung {
     	padding: 10px 80px;
     }
+}
+    
 @media(max-width:767px){
 	.noidung{
 		margin-top:-110px!important;
@@ -15,7 +17,7 @@
 }
     .section{
     	height: 250px;
-		margin: 10px -5px;
+		margin: 10px 0;
 }
   
     .trangchu-item {
