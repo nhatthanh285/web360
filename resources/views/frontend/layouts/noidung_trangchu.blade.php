@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" >
     <div class="col-xs-12 col-sm-6 col-md-4 section">
         <div class="item-index">
 			<a href=""><img class="trangchu-item" src="public/images/pic10.jpg"></a>
