@@ -77,4 +77,6 @@ Route::get('/onepost/{post}', ['as'=> 'onepost.show', 'uses' => 'User\PostsContr
 
 Route::get('/onepost/4', ['as' => 'onepost', 'uses' => 'PostsController@show']);
 
+Route::post('/uploadImages', ['as'=> 'uploadImages', 'uses' =>'HomeController@uploadImages']);
+
 

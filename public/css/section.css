@@ -4,10 +4,12 @@
     	padding: 0;
 		background:#F4F4F4!important;
     }
-
-    .noidung {
+@media(min-width:900px){
+	.noidung {
     	padding: 10px 80px;
     }
+}
+
 @media(max-width:767px){
 	.noidung{
 		margin-top:-110px!important;
@@ -15,25 +17,30 @@
 }
     .section{
     	height: 250px;
-		margin: 10px -5px;
+		margin: 10px 0;
+    	padding: 10px;
+    	margin: 010px 0px 10px 0px;
+
 }
   
     .trangchu-item {
     	height: 100% ;
     	width: 100%;
+    	position: relative;
+    	display: block;
     }
 
    
 
     .title{
     	position: absolute;
-    	width: 100%;
-    	left: 0px;
+    	width: 94%;
+    	left: 10px;
     	padding: 10px 10px;
     	text-align: center;
     	opacity: 0.4;
     	color: white;
-    	bottom: -10px;
+    	bottom: 0;
     	text-shadow: blue 2px 3px 4px;
     	background: gray;
     	font-weight: bolder;
@@ -47,7 +54,9 @@
      background: rgba(200, 200, 200, 0.1);
      transition: 0.5s;
     } */
-	
+	.section:hover {
+    box-shadow: 0 0 15px 2px #000}
+
 .item-index {
 	height:100%;
 	background: #fff none repeat scroll 0 0;

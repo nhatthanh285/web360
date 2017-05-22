@@ -54,14 +54,14 @@
     </div>
 </div>
 <script>
-    {{--$(document).ready(function () {--}}
-        {{--$("#sl").click(function () {--}}
-            {{--$(".thaydoi").php("@include('frontend.layouts.image_360')");--}}
-        {{--});--}}
-        {{--$("#anh360").click(function () {--}}
-            {{--$(".thaydoi").php("@include('frontend.layouts.slide_chitiet')");--}}
-        {{--});--}}
-    {{--});--}}
+    $(document).ready(function () {
+        $("#sl").click(function () {
+            $(".thaydoi").php("@include('frontend.layouts.image_360')");
+        });
+        $("#anh360").click(function () {
+            $(".thaydoi").php("@include('frontend.layouts.slide_chitiet')");
+        });
+    });
 </script>
 </body>
 </html>
