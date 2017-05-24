@@ -34,8 +34,7 @@
 
     .title{
     	position: absolute;
-    	width: 94%;
-    	left: 10px;
+    	width: 100%;
     	padding: 10px 10px;
     	text-align: center;
     	opacity: 0.4;
@@ -44,6 +43,7 @@
     	text-shadow: blue 2px 3px 4px;
     	background: gray;
     	font-weight: bolder;
+		margin-bottom:0px;
     }
 
     /* .section:hover {
@@ -54,8 +54,6 @@
      background: rgba(200, 200, 200, 0.1);
      transition: 0.5s;
     } */
-	.section:hover {
-    box-shadow: 0 0 15px 2px #000}
 
 .item-index {
 	height:100%;

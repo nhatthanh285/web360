@@ -7,7 +7,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	  <a class="nav-logo" href="#"><img src="public/images/logo.png" class="img-responsive"style="max-height:50px;margin-left:15px;"/></a>
+	  <a class="nav-logo" href="#"><img src="public/images/logo.png" class="img-responsive"style="width:50px;height:50px;margin-left:15px;"/></a>
 	</div>
 	<div id="navbar" class="navbar-collapse collapse">
 	   <ul class="nav navbar-nav navbar-right">

@@ -4,31 +4,31 @@ body{
 }
 @media(max-width:768px){
 	.bt1-index{
-		margin: 35% auto 0;
+		margin: 40vh auto 0;
 		width: 70%;
 	}
 	.bt2-index{
-		margin: 50% auto 0;
+		margin: 50vh auto 0;
 		width: 70%;
 	}
 }
 @media(min-width:768px){
 	.bt1-index{
-		margin: 60% auto 0;
+		margin: 40vh auto 0;
 		width: 70%;
 	}
 	.bt2-index{
-		margin: 80% auto 0;
+		margin: 50vh auto 0;
 		width: 70%;
 	}
 }
 @media(min-width:900px){
 	.bt1-index{
-		margin: 70% auto 0;
+		margin: 40vh auto 0;
 		width: 70%;
 	}
 	.bt2-index{
-		margin: 100% auto 0;
+		margin: 50vh auto 0;
 		width: 70%;
 	}
 }
@@ -46,23 +46,13 @@ body{
 	-o-transform:rotate(360deg);
 	transform:rotate(360deg);
 }
-@media(max-width:500px){
-	.header-index{
-		height:350px;
-	}
-}
-@media(min-width:500px){
-	.header-index{
-		height:400px;
-	}
-}
-@media(min-width:750px){
-	.header-index{
-		height:500px;
-	}
-}
-@media(min-width:900px){
-	.header-index{
-		height:650px;
-	}
+.img-index {
+    height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: auto;
+    left: 50%;
 }
